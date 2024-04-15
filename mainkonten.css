@@ -1,0 +1,24 @@
+.palestine {
+  justify-content: center;
+  align-item: center;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+.palestine img {
+  width: 210px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+.item h5 {
+  font-size: 30px;
+}
+.doa {
+background: white;
+color: black;
+width: 100%;
+height: auto%;
+}
+.doa p {
+padding: 15px;
+}
