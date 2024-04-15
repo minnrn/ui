@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:locale" content="en_ID" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MINNRN" />
+  <meta property="og:description" content="Contact Us" />
+  <meta name="language" content="Indonesia" />
+  <meta property="og:image" content="../icon.png">
+  <meta property="og:url" content="https://ui-minnrn.vercel.app" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MINNRN" />
+  <meta name="twitter:description" content="Contact Us" />
+  <meta name="twitter:image" content="https://ui-minnrn.vercel.app/thumbnail.png" />
+    <!-- End Twitter -->
+  <meta property="og:site_name" content="MINNRN" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="og:image:type" content="image/png" />
+  <meta name="og:image:width" content="1200" />
+  <meta name="og:image:heigh" content="630" />
+  <meta name="og:image" content="https://ui-minnrn.vercel.app/thumbnail.png" />
+  <meta itemprop="name" content="MINNRN" />
+  <meta itemprop="image" content="https://ui-minnrn.vercel.app/thumbnail.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <meta name="keywords" content="Contact Us" />
+  <meta http-equiv="Content-Type" content="text/html" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ui-minnrn.vercel.app" />
+  <meta name="author" content="MINNRN">
+  <link rel="icon" href="../icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Us</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <img class="icon" src="../icon.png" alt="Icon">
+    </div>
+    <div>
+      <h4 class="headj">MINNRN</h4>
+    </div>
+    <div class="menu">
+      <img src="https://i.ibb.co/VH6qbJR/Flag-of-Indonesia.png" alt="iconmenu">
+    </div>
+  </nav>
+  <main>
+
+<div class="container">
+  <form action="https://api.telegram.org/bot6450976304:AAHJN4jnjcL2EzRRJLrAoo4pOZ7jMsMe7E0/sendMessage" method="post">
+    <input type="hidden" name="chat_id" value="7038446148">
+    <input type="hidden" name="parse_mode" value="HTML">
+    
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="text" style="background-color: white;"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="text" style="background-color: white;"><br>
+    
+    <label for="subjek">Subjek:</label><br>
+    <input type="text" id="subjek" name="text" style="background-color: white;"><br>
+    
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="text" style="background-color: white; max-width: 100%;" maxlength="200"></textarea><br>
+    
+    <input type="submit" value="Kirim" onclick="return submitForm();">
+  </form>
+</div>
+
+  </main>
+  <div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4654A2" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,69.3C384,85,480,139,576,170.7C672,203,768,213,864,208C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </div>
+  <footer class="footer">
+    <div>
+      <a href="https://ui-minnrn.vercel.app/terms-of-service/">Terms of Service</a>
+      <a href="https://ui-minnrn.vercel.app/privacy-policy/">Privacy Policy</a>
+      <a href="https://ui-minnrn.vercel.app/contact-us/">Contact Us</a>
+    </div>
+    <div>
+      <h6>&copy; 2024 MINNRN</h6>
+    </div>
+  </footer>
+  
+<script>
+function submitForm() {
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var subjek = document.getElementById("subjek").value;
+  var pesan = document.getElementById("pesan").value;
+  
+  var message = "Nama: " + nama + "%0AEmail: " + email + "%0ASubjek: " + subjek + "%0APesan: " + pesan;
+  var url = "https://api.telegram.org/bot6450976304:AAHJN4jnjcL2EzRRJLrAoo4pOZ7jMsMe7E0/sendMessage?chat_id=7038446148&text=" + message;
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url);
+  xhr.send();
+  
+  alert("Pesan terkirim!");
+  
+  return false; // Prevent form submission
+}
+</script>
+
+</body>
+</html>
