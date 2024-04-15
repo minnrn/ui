@@ -18,6 +18,7 @@
       height: 60px;
       display: flex;
       align-items: center;
+      top: 0;
     }
 
     nav div {
@@ -83,6 +84,7 @@
       height: 130px;
       display: flex;
       align-items: center;
+      top: 0;
     }
 
     nav div {
