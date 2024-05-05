@@ -1,0 +1,157 @@
+    body {
+      background-color: #6574cd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    nav {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      top: 0;
+    }
+
+    nav div {
+      color: #6574cd;
+      font-size: 14px;
+      padding: 10px;
+      display: inline-block;
+      text-shadow: -2px -2px 0 black;
+    }
+    
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    
+    .headj {
+      font-size: 25px;
+    }
+    
+    .menu {
+      margin-left: auto;
+      margin-right: 15px;
+    }
+    .menu img {
+      width: 51px;
+      height: 34px;
+    }
+    main {
+      padding: 20px;
+      background-color: #6574cd;
+      box-sizing: border-box;
+      flex: 1;
+      height: auto;
+    }
+  .footer {
+    background-color: #4654A2;
+    color: #D2D2D2;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer a {
+    color: #D2D2D2;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  svg {
+    position: flex;
+    bottom: 0;
+    display: flex;
+    left: 0;
+  }
+  /*desktop preview*/
+  @media (min-width: 768px) {
+
+  nav {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      top: 0;
+    }
+
+    nav div {
+      color: #6574cd;
+      font-size: 20px;
+      padding: 10px;
+      display: inline-block;
+      text-shadow: -4px -4px 0 black;
+    }
+    
+    .icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      
+    }
+    
+    .headj {
+      font-size: 50px;
+      padding-left: 20px;
+    }
+    
+    .menu {
+      margin-left: auto;
+      margin-right: 40px;
+      
+    }
+    
+    .menu img {
+      width: 51px;
+      height: 34px;
+    }
+    
+    main {
+      padding: 20px;
+      background-color: #6574cd;
+      color: white;
+      box-sizing: border-box;
+      flex: 1;
+      height: auto;
+    }
+  .footer {
+    background-color: #4654A2;
+    color: #D2D2D2;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer a {
+    color: #D2D2D2;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  svg {
+    position: flex;
+    bottom: 0;
+    left: 0;
+    display: flex;
+  }
+
+}
+
+/*alight motion style*/
+   .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+   }
